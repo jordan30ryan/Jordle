@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<script src='word.js'></script>	
+		<script src='wordList.min.js'></script>	
+		<script src='wordBank.min.js'></script>	
+		<style> 
+		#wordtable {
+			height: 60%;
+		}
+		.wordrow {
+		  display: flex;                  /* establish flex container */
+		  flex-direction: row;            /* default value; can be omitted */
+		  flex-wrap: nowrap;              /* default value; can be omitted */
+		  justify-content: space-between; /* switched from default (flex-start, see below) */
+		  background-color: lightgrey;
+
+		  max-width: 500px;
+		  margin: auto;
+		}
+		.wordrow > div {
+		  width: 100%;
+		  height: 100px;
+		  border: 2px solid black;
+		}
+		.letter { 
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			font-size:80px;
+			position: relative;
+		}
+		.letter > div {
+		    font-size: 30;
+		    position: absolute;
+		    top: 0;
+		    right: 5;
+		}
+		.correctPosLetter { 
+		  background-color: lightgreen;
+		}
+		.wrongPosCorrectLetter { 
+		  background-color: lightyellow;
+		}
+		.incorrectLetter{ 
+		  background-color: darkgrey;
+		}
+		</style> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	</head>
+
+
+
+	<body>
+	<div id='wordtable'>
+	</div>
+
+	<div id='keyboard'>
+	</div>
+	</body>
+</html>
