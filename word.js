@@ -1,4 +1,4 @@
-const NUM_ROWS = 5;
+const NUM_ROWS = 6;
 const NUM_LETTERS = 5;
 const ROW_CLASS = 'wordrow';
 const LETTER_CLASS = 'letter';
@@ -37,7 +37,7 @@ function init() {
 
 	currentRowIdx = 0;
 	currentLetterIdx = 0;
-	finalWord = Word_List.getRandomWord(5);
+	finalWord = Word_List.getRandomWord(NUM_LETTERS);
 	for (var i = 0; i < NUM_LETTERS; i++) {
 		let letter = finalWord[i];
 		if(Object.keys(finalWordLetterCounts).includes(letter)) {
